@@ -24,10 +24,11 @@ namespace IntroToOop
             firstDog.Potty();
             firstDog.Cuddle();
 
-
-          
-
-           
+            Superhero superhero = new Superhero();
+            superhero.Cape();
+            superhero.Boots();
+            superhero.Powers();
+            superhero.Fly();
         }
     }
 }

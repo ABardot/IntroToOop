@@ -4,33 +4,33 @@ namespace IntroToOop
 {
     internal class Superhero
     {
-        private bool hasCape;
-        private bool hasBoots;
-        private bool hasSuperPowers;
-        private bool canFly;
+        private bool hasCape = true;
+        private bool hasBoots = false;
+        private bool hasSuperPowers = true;
+        private bool canFly = false;
 
         public bool HasCape
         {
             get { return this.hasCape; } //get allows to see value of name
-            set { this.hasCape = true; } //set will allow you to set name
+            set { this.hasCape = value; } //set will allow you to set name
         }
 
         public bool HasBoots
         {
             get { return this.hasBoots; }
-            set { this.hasBoots = true; }
+            set { this.hasBoots = value; }
         }
 
         public bool HasSuperPowers
         {
             get { return this.hasSuperPowers; }
-            set { this.hasSuperPowers = true; }
+            set { this.hasSuperPowers = value; }
         }
 
         public bool CanFly
         {
             get { return this.canFly; }
-            set { this.canFly = true; }
+            set { this.canFly = value; }
         }
 
         public Superhero()
@@ -42,6 +42,12 @@ namespace IntroToOop
         {
             this.hasCape = hasCape;
             this.hasBoots = hasBoots;
+            this.hasSuperPowers = hasSuperPowers;
+            this.canFly = canFly;
+        }
+
+        public Superhero(bool hasSuperPowers, bool canFly)
+        {
             this.hasSuperPowers = hasSuperPowers;
             this.canFly = canFly;
         }
